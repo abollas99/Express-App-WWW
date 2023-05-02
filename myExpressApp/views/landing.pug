@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p(class="welcome") Welcome to #{title}
+  form(action="/", method = "POST")
+    div
+      input(name="lead_id", type="name", placeholder="Enter your ID")
+
+      input(name="lead_name", type="name", placeholder="Enter your First name") 
+
+      input(name="lead_email", type="email", placeholder="Enter your Email") 
+    button(type="submit" class="landing_button") Submit me
+    if leads
+      h1 Leads
+      for lead in leads
+        table 
+          tr
+            td <span> #{lead.id}</span>
+            td <span> #{lead.email}</span> 
+            td <span> #{lead.name}</span> 
+            td
+              a(href="/lead/" + lead.id) Details from this Lead 

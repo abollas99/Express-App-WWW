@@ -1,0 +1,43 @@
+body {
+  padding: auto;
+  margin: auto;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: lime;
+  background-color: rgb(98, 98, 98);
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
+a {
+  color: #00B7FF;
+}
+.landing_button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+th {
+  background-color: lightcyan;
+  background-color: whitesmoke; padding: 1em;
+  text-align: left;
+  border: 1px solid purple; padding: 1em;
+}
+td {
+  color: rgb(0, 183, 255);
+  background-color: lightcyan;
+  border: 1px solid purple; width: 200px;
+  padding: 1em;
+}
+tr {
+  color: darkcyan;
+}
